@@ -1,0 +1,147 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<!-- saved from url=(0037)http://www.cgo.org/html/keynote1.html -->
+<HTML><HEAD>
+<META http-equiv=Content-Type content="text/html; charset=windows-1252">
+<META content="Microsoft FrontPage 5.0" name=GENERATOR>
+<style>
+<!--
+DIV.Section1 {
+	page: Section1
+}
+-->
+</style>
+</HEAD>
+<BODY>
+<TABLE style="BORDER-COLLAPSE: collapse" borderColor=#111111 cellSpacing=0 
+cellPadding=0 width=662 border=0>
+  <TBODY>
+  <TR>
+    <TD width=662>
+      <P class=MsoNormal align=center><FONT face="Arial Black"><font size="6">
+      Tutorial</font> </FONT></P>
+      <P class=MsoNormal align=center><FONT face="Arial Black"><IMG height=10 
+      src="../images/image001.gif" width=600 border=0></FONT></P>
+      <P align="justify">&nbsp;</P></TD></TR>
+  <TR>
+    <TD width=662>
+      <P class=MsoNormal 
+      style="TEXT-ALIGN: justify">Software Dynamic Translation: Challenges, 
+      Approaches and Applications</P>
+      <P class=MsoNormal align="justify"><font face="Garamond">
+      <a href="http://www.google.com/url?sa=U&start=1&q=http://www.cs.pitt.edu/~childers">
+      Bruce Childers</a>, <i>University of Pittsburgh<br>
+      </i><a href="http://www.cs.virginia.edu/brochure/profs/davidson.html">Jack 
+      Davidson</a>, <i>University of Virginia</i></font><FONT face="Times New Roman"><I><SPAN 
+      style="FONT-SIZE: 12pt"><BR>&nbsp;</SPAN></I></FONT></P></TD></TR>
+  <TR>
+    <TD width=662>
+      <p class="MsoNormal" align="justify"><u><font face="Times New Roman">
+      Description</font></u></p>
+      <P align="justify">Modern software for high-performance and network-based 
+      computing is becoming increasingly dynamic and adaptive. Software dynamic 
+      translation (SDT) is a technology that enables software malleability and 
+      adaptivity at the instruction-level by providing facilities for run-time 
+      monitoring and code modification. SDT has many exciting applications, 
+      including dynamic code optimizers, security checkers, debuggers, binary 
+      instruction set translators, computer architecture simulators and host 
+      machine virtualization. <br>
+      <br>
+      Although SDT is a compelling technology, there are significant barriers to 
+      its acceptance as a general technique. First, to construct dynamic 
+      software with SDT is complex, time consuming and error prone due to the 
+      close coupling of the dynamic translator to the underlying computing 
+      platform. Second, the performance overhead of SDT, including code 
+      translation, instrumentation and multithreading support, can impose a 
+      large penalty. Finally, it is complex to debug dynamically translated 
+      programs as typical debuggers do not work for code that has been modified 
+      at run-time. To address these challenges, we developed a system, called 
+      Strata, for reconfigurable and low overhead SDT. Strata is available for 
+      several platforms, including SPARC/Solaris 9, x86/Linux, MIPS/IRIX, and 
+      Sony Playstation 2 MIPS/Linux. It has been used for program security, 
+      operating system call interposition, instruction 
+      compression/decompression, program instrumentation for self-managing 
+      systems, computer architecture simulation, and on-demand&nbsp; application 
+      downloading for smartcards. <br>
+      <br>
+      This tutorial will present the approaches used in Strata for dynamic 
+      translation. Strata is designed as an object-oriented virtual machine with 
+      target independent and dependent services that can be easily reconfigured 
+      and retargetted for new applications and platforms. It uses several novel 
+      mechanisms to reduce the overhead of code translation. These capabilities 
+      address the sources of translation overhead involving direct and indirect 
+      control transfers, multithreading, and code instrumentation. We have also 
+      developed several techniques for debugging of dynamically translated 
+      programs. These techniques have been incorporated into Strata and a new 
+      debugger, called TDB. TDB is based on the GNU GDB debugger and supports 
+      all of GDB's source-level commands and queries for dynamically translated 
+      code. <br>
+      <br>
+      <u>Tutorial Topics</u>:<br>
+      <br>
+      The tutorial will describe SDT, its applications, and the approaches used 
+      for code translation. The tutorial will explore Strata and its mechanisms 
+      for dynamic translation. The focus will be on SDT reconfigurability and 
+      machine retargetability, translation overhead reduction, multithreading, 
+      debugging, and uses of the technology for code security. The tutorial will 
+      have three parts: 1) an introduction <br>
+      to SDT, 2) low overhead translation and debugging, and 3) a case study for 
+      code security. <br>
+      <br>
+      The first part will introduce SDT and its challenges, including the issues 
+      in developing new uses of the technology, the difficulty in bringing up a 
+      SDT system, the overhead of program interception and translation, and the 
+      debugging of dynamically translated code. Several applications of the 
+      technology will also be described and a brief overview of different SDT 
+      frameworks will be given. <br>
+      <br>
+      The second part will focus on Strata and how it addresses the challenges 
+      from the introduction. We will describe Strata's organization and how it 
+      eases system reconfiguration and machine retargeting. Support for 
+      multithreaded programs will be emphasized. This tutorial part will also 
+      describe Strata's overhead reduction techniques, including partial 
+      inlining, indirect branch target caching, and fast-return handling. The 
+      second part will conclude with a description of TDB and its techniques for 
+      source-level debugging. <br>
+      <br>
+      The final part will describe a case study on SDT for security applications 
+      such as protecting legacy code against code injection attacks (e.g. buffer 
+      overrun attacks) with a variety of complementary techniques (e.g., 
+      instruction-set and address-space randomization, software stack 
+      protection, etc.), return-to-libc style attacks, and dynamically enforcing 
+      user-specified security policies.</P>
+      <P align="justify">&nbsp;</P></TD></TR>
+  <TR>
+    <TD width=662>
+      <P class=MsoNormal style="TEXT-ALIGN: justify" align=left><FONT 
+      face="Times New Roman"><u>Presenter Biographies</u>:</FONT></P>
+      <P class=MsoNormal 
+      style="TEXT-ALIGN: justify">Bruce Childers is an Assistant Professor in 
+      the Department of Computer Science at the University of Pittsburgh. Dr. 
+      Childers received a BS degree (Computer Science, 1991) from the College of 
+      William and Mary, and a PhD degree (Computer Science, 2000) from the 
+      University of Virginia. His research interests are compilers and software 
+      development tools, computer architecture, and embedded systems. Current 
+      research projects include continuous compilation to synergistically apply 
+      both static and dynamic code optimizations, debugging for dynamically 
+      translated code, power-aware real-time systems, and demand-driven software 
+      testing. <br>
+      <br>
+      Jack Davidson is a Professor in the Department of Computer Science at the 
+      University of Virginia. Dr. Davidson received the B.A.S. and M.S. degrees 
+      in computer science from Southern Methodist University in 1975 and 1977, 
+      respectively. He received the Ph.D. degree in computer science from the 
+      University of Arizona in 1981. His main research interests include 
+      compilers, code generation, optimization, security, embedded systems, and 
+      computer architecture. Current research projects include continuous 
+      compilation to synergistically apply both static and dynamic code 
+      optimizations, compilation for embedded systems, and software security and 
+      reliability. </P>
+      <P align="justify">&nbsp;</P></TD></TR></TBODY></TABLE>
+<P class=MsoNormal align=justify>&nbsp;</P>
+<P class=MsoNormal align=justify>&nbsp;</P>
+<P class=MsoNormal align=justify>&nbsp;</P>
+<P class=MsoNormal align=justify>&nbsp;</P>
+<P class=MsoNormal align=justify>&nbsp;</P>
+<P class=MsoNormal align=justify>&nbsp;</P>
+<P class=MsoNormal style="TEXT-ALIGN: justify" 
+align=center>&nbsp;</P></BODY></HTML>
